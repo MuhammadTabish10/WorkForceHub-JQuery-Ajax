@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Add Employee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="emp-display">
+    <nav class="navbar navbar-light bg-light justify-content-between">
+      <a href="home.html" class="navbar-brand"><img src="images/logo.png" /></a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">
+          Search
+        </button>
+        <a href="login.html" class="btn btn-outline-danger ml-2">Logout</a>
+      </form>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 mb-5">
+          <h2 class="mt-5 mb-4">Add Employee</h2>
+          <form>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Enter first name" />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Enter last name" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="text" class="form-control" id="phone" placeholder="Enter phone number" />
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Enter address" />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" class="form-control" id="dob" />
+            </div>
+            <div class="form-group">
+              <label for="hireDate">Hire Date</label>
+              <input type="date" class="form-control" id="hireDate" />
+            </div>
+            <div class="form-group">
+              <label for="jobTitle">Job Title</label>
+              <select class="form-control" id="jobTitle"></select>
+            </div>
+            <div class="form-group">
+              <label for="department">Department</label>
+              <select class="form-control" id="department"></select>
+            </div>
+            <div class="text-center">
+              <button id="submitButton" type="button" class="btn btn-primary btn-block">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/add-employee.js"></script>
+</body>
+
+</html>
